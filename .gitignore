@@ -1,0 +1,7 @@
+*.json
+*.txt
+*.rar
+__pycache__/*
+checkpoints/*
+.vscode/*
+data/*
