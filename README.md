@@ -36,7 +36,7 @@ parser.add_argument('--numprocess', type=int, default=1, help="Number of process
 parser.add_argument('--start', type=str, default='', help="Directory to load model")
 parser.add_argument('--test', type=bool, default=False, help="Set to True to inference")
 parser.add_argument('--pretrain', type=bool, default=False, help="Set to True to pretrain")
-parser.add_argument('--datapath', type=str, default='./data/ASTE-Data-V2-EMNLP2020/14lap', help="Data directory")
+parser.add_argument('--datapath', type=str, default='./data/ASTE-Data-V2-EMNLP2020/14lap/', help="Data directory")
 parser.add_argument('--testfile', type=str, default='test_triplets.txt', help="Filename of test file")
 parser.add_argument('--dropout', type=float, default=0.5, help="Dropout")
 parser.add_argument('--seed', type=int, default=1, help="PyTorch seed value")
@@ -44,17 +44,17 @@ parser.add_argument('--seed', type=int, default=1, help="PyTorch seed value")
 
 Start with pretraining:
 ```
-python main.py --datapath ./data/ASTE-Data-V2/14lap --pretrain True
+python main.py --datapath ./data/ASTE-Data-V2-EMNLP2020/14lap/ --pretrain True
 ```
 
 Then reinforcement learning fine-tuning:
 ```
-python main.py --lr 0.000005 --datapath ./data/ASTE-Data-V2/14lap --start checkpoints/{experiment_id}/model
+python main.py --lr 0.000005 --datapath ./data/ASTE-Data-V2-EMNLP2020/14lap/ --start checkpoints/{experiment_id}/model
 ```
 
 Inference (results will be printed, can be modified to be saved to a file in `TrainProcess.py`):
 ```
-python main.py --datapath ./data/ASTE-Data-V2/14lap --start checkpoints/{experiment_id}/model --test True --testfile test_triplets.txt
+python main.py --datapath ./data/ASTE-Data-V2-EMNLP2020/14lap/ --start checkpoints/{experiment_id}/model --test True --testfile test_triplets.txt
 ```
 
 

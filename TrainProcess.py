@@ -115,7 +115,7 @@ def workProcess(model, datas, sample_round, mode, device, sentiments, test):
                             opinion.append(whitespace_tokens[bert_to_whitespace[m][0]])
                     all_preds.append((sentiments[top_action[i].item()-1], ' '.join(aspect), ' '.join(opinion)))
                     j += 1
-            print(data['sentext'], '==>', str(all_preds))
+            print(data['sentext'], '====>', str(all_preds))
 
     if len(datas) == 0:
         return 0, 0, 0, 0

@@ -4,6 +4,7 @@ import spacy
 from spacy.tokens import Doc
 from transformers import BertTokenizer
 import tokenizations
+import os
 
 
 class WhitespaceTokenizer(object):
@@ -36,7 +37,7 @@ class DataManager:
         for name in names:
             self.data[name] = []
             filename = testfile if name == "test" else name + "_triplets.txt"
-            with open(path + filename) as fl:
+            with open(os.path.join(path, filename)) as fl:
                 for line in fl.readlines():
                     # process ASTE data for HRL
                     sentence, triplets = line.strip().split('####')
@@ -155,4 +156,6 @@ class DataManager:
         else:
             # NOTE: order for self.sentiments depends on dataset, order has to be the same between dataset splits
             # fixed self.sentiments order for test data
-            self.sentiments = ['NEG', 'POS', 'NEU']
+            self.sentiments = ['POS', 'NEG', 'NEU']
+            self.sent_count = len(self.sentiments)
+            print(self.sentiments)

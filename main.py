@@ -153,7 +153,7 @@ if __name__ == "__main__":
             tot += tot_
             # print(acc, cnt, tot)
         testF1 = calcF1(acc, cnt, tot)
-        print("test P: ", acc/cnt, "test R: ", acc/tot, "test F1: ", testF1)
+        # print("test P: ", acc/cnt, "test R: ", acc/tot, "test F1: ", testF1)
     elif args.pretrain:
         work(["RE", "NER", "pretrain"], train_data, test_data, dev_data, model, args, 1, args.epochPRE, device, experiment_id)
     else:
