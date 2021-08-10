@@ -94,4 +94,4 @@ python main.py --datapath ./data/ASTE-Data-V2-EMNLP2020/14lap/ --start checkpoin
 Our code is adapted from the code from the paper "A Hierarchical Framework for Relation Extraction with Reinforcement Learning" at https://github.com/truthless11/HRL-RE. We would like to thank the authors for their well-organised and efficient code.
 
 ## Citation
-Samson Yu Bai Jian, Tapas Nayak, Navonil Majumder, Soujanya Poria. 2021. [Aspect Sentiment Triplet Extraction Using Reinforcement Learning](https://github.com/declare-lab/ASTE-RL). In CIKM ’21: Proceedings of the 30th ACM International Conference on Information & Knowledge Management, November 01–05, 2021, Gold Coast, Queensland, Australia. ACM, New York, NY, USA, 5 pages.
+Samson Yu Bai Jian, Tapas Nayak, Navonil Majumder, Soujanya Poria. 2021. [Aspect Sentiment Triplet Extraction Using Reinforcement Learning](https://declare-lab.net/assets/pdfs/ASTE_RL_CIKM_2021_FINAL.pdf). In CIKM ’21: Proceedings of the 30th ACM International Conference on Information & Knowledge Management, November 01–05, 2021, Gold Coast, Queensland, Australia. ACM, New York, NY, USA, 5 pages.
