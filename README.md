@@ -1,5 +1,21 @@
 # Aspect Sentiment Triplet Extraction using Reinforcement Learning
 
+**Abstract**: Aspect Sentiment Triplet Extraction (ASTE) is the task of extracting
+triplets of aspect terms, their associated sentiments, and the opinion
+terms that provide evidence for the expressed sentiments. Previous
+approaches to ASTE usually simultaneously extract all three components or first identify the aspect and opinion terms, then pair them
+up to predict their sentiment polarities. In this work, we present
+a novel paradigm, ASTE-RL, by regarding the aspect and opinion
+terms as arguments of the expressed sentiment in a hierarchical
+reinforcement learning (RL) framework. We first focus on sentiments expressed in a sentence, then identify the target aspect and
+opinion terms for that sentiment. This takes into account the mutual interactions among the triplet’s components while improving
+exploration and sample efficiency. Furthermore, this hierarchical RL
+setup enables us to deal with multiple and overlapping triplets. In
+our experiments, we evaluate our model on existing datasets from
+laptop and restaurant domains and show that it achieves state-ofthe-art performance.
+
+🔥 :fire: 🔥 [Download the paper](https://declare-lab.net/assets/pdfs/ASTE_RL_CIKM_2021_FINAL.pdf)
+
 ## Data
 ### ASTE-Data-V2
 ASTE-Data-V2 is originally released by the paper "Position-Aware Tagging for Aspect Sentiment Triplet Extraction". It can be downloaded here: https://github.com/xuuuluuu/SemEval-Triplet-data/tree/master/ASTE-Data-V2-EMNLP2020.
