@@ -14,7 +14,7 @@ setup enables us to deal with multiple and overlapping triplets. In
 our experiments, we evaluate our model on existing datasets from
 laptop and restaurant domains and show that it achieves state-ofthe-art performance.
 
-🔥 :fire: 🔥 [Download the paper](https://declare-lab.net/assets/pdfs/ASTE_RL_CIKM_2021_FINAL.pdf)
+🔥 :fire: 🔥 [Download the paper](https://arxiv.org/pdf/2108.06107.pdf)
 
 ## Data
 ### ASTE-Data-V2
@@ -94,4 +94,4 @@ python main.py --datapath ./data/ASTE-Data-V2-EMNLP2020/14lap/ --start checkpoin
 Our code is adapted from the code from the paper "A Hierarchical Framework for Relation Extraction with Reinforcement Learning" at https://github.com/truthless11/HRL-RE. We would like to thank the authors for their well-organised and efficient code.
 
 ## Citation
-Samson Yu Bai Jian, Tapas Nayak, Navonil Majumder, Soujanya Poria. 2021. [Aspect Sentiment Triplet Extraction Using Reinforcement Learning](https://declare-lab.net/assets/pdfs/ASTE_RL_CIKM_2021_FINAL.pdf). In CIKM ’21: Proceedings of the 30th ACM International Conference on Information & Knowledge Management, November 01–05, 2021, Gold Coast, Queensland, Australia. ACM, New York, NY, USA, 5 pages.
+Samson Yu Bai Jian, Tapas Nayak, Navonil Majumder, Soujanya Poria. 2021. [Aspect Sentiment Triplet Extraction Using Reinforcement Learning](https://arxiv.org/pdf/2108.06107.pdf). In CIKM ’21: Proceedings of the 30th ACM International Conference on Information & Knowledge Management, November 01–05, 2021, Gold Coast, Queensland, Australia. ACM, New York, NY, USA, 5 pages.
